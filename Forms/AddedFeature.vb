@@ -6,7 +6,7 @@
 
         Dim asd = dgvCheckStocks.CurrentRow.Cells(4).Value
 
-        numUpDown.Value = asd
+        testingTxt.Text = asd.ToString()
     End Sub
 
     Sub dgv_styleRow()
@@ -24,7 +24,7 @@
             Dim stock As Integer
 
             stock = Val(TextBox1.Text)
-            stock -= numUpDown.Value
+            stock -= Val(testingTxt.Text)
             TextBox1.Text = stock
             OMSysStocksDBBindingSource.EndEdit()
             OMSys_StocksDBTableAdapter.Update(OMSysOrdersDBDataSet)
@@ -45,9 +45,30 @@
         Next
     End Sub
 
+    Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnNumUp.Click
+        Dim num As Integer = Convert.ToInt32(testingTxt.Text)
+
+        If num + 1 > Convert.ToInt32(TextBox1.Text) Then
+
+        Else
+            testingTxt.Text = Val(num + 1)
+        End If
+    End Sub
+
+    Private Sub btnMinus_Click(sender As Object, e As EventArgs) Handles btnNumDown.Click
+        Dim num As Integer = Convert.ToInt32(testingTxt.Text)
+
+        If num - 1 = 0 Then
+
+        Else
+            testingTxt.Text = Val(num - 1)
+        End If
+
+    End Sub
+
     Private Sub dgvCheckStocks_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCheckStocks.CellEnter
         Dim asd = dgvCheckStocks.CurrentRow.Cells(4).Value
 
-        numUpDown.Value = asd
+        testingTxt.Text = asd.ToString()
     End Sub
 End Class

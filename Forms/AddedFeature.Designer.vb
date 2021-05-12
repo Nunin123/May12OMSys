@@ -23,9 +23,9 @@ Partial Class AddedFeature
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.dgvCheckStocks = New System.Windows.Forms.DataGridView()
         Me.IDDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.MaterialNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -43,12 +43,13 @@ Partial Class AddedFeature
         Me.lblStockList = New System.Windows.Forms.Label()
         Me.OmSysOrdersDBDataSet1 = New OMSys.OMSysOrdersDBDataSet()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.numUpDown = New System.Windows.Forms.NumericUpDown()
+        Me.testingTxt = New System.Windows.Forms.TextBox()
+        Me.btnNumUp = New System.Windows.Forms.Button()
+        Me.btnNumDown = New System.Windows.Forms.Button()
         CType(Me.dgvCheckStocks, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OMSysStocksDBBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OMSysOrdersDBDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.OmSysOrdersDBDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.numUpDown, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgvCheckStocks
@@ -60,40 +61,40 @@ Partial Class AddedFeature
         Me.dgvCheckStocks.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.dgvCheckStocks.AutoGenerateColumns = False
         Me.dgvCheckStocks.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        DataGridViewCellStyle13.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvCheckStocks.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle13
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvCheckStocks.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgvCheckStocks.ColumnHeadersHeight = 29
         Me.dgvCheckStocks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         Me.dgvCheckStocks.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.MaterialNameDataGridViewTextBoxColumn, Me.Size, Me.Color, Me.StockDataGridViewTextBoxColumn})
         Me.dgvCheckStocks.DataSource = Me.OMSysStocksDBBindingSource
-        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle14.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgvCheckStocks.DefaultCellStyle = DataGridViewCellStyle14
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgvCheckStocks.DefaultCellStyle = DataGridViewCellStyle5
         Me.dgvCheckStocks.EnableHeadersVisualStyles = False
         Me.dgvCheckStocks.Location = New System.Drawing.Point(13, 84)
         Me.dgvCheckStocks.Margin = New System.Windows.Forms.Padding(4)
         Me.dgvCheckStocks.Name = "dgvCheckStocks"
         Me.dgvCheckStocks.ReadOnly = True
         Me.dgvCheckStocks.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
-        DataGridViewCellStyle15.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.Info
-        DataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvCheckStocks.RowHeadersDefaultCellStyle = DataGridViewCellStyle15
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer), CType(CType(52, Byte), Integer))
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Info
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvCheckStocks.RowHeadersDefaultCellStyle = DataGridViewCellStyle6
         Me.dgvCheckStocks.RowHeadersVisible = False
         Me.dgvCheckStocks.RowHeadersWidth = 51
         Me.dgvCheckStocks.Size = New System.Drawing.Size(645, 318)
@@ -243,17 +244,37 @@ Partial Class AddedFeature
         Me.Label1.Location = New System.Drawing.Point(667, 246)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(115, 19)
+        Me.Label1.Size = New System.Drawing.Size(117, 19)
         Me.Label1.TabIndex = 218
-        Me.Label1.Text = "Order quantity:"
+        Me.Label1.Text = "Order Quantity:"
         '
-        'numUpDown
+        'testingTxt
         '
-        Me.numUpDown.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.numUpDown.Location = New System.Drawing.Point(797, 246)
-        Me.numUpDown.Name = "numUpDown"
-        Me.numUpDown.Size = New System.Drawing.Size(111, 22)
-        Me.numUpDown.TabIndex = 220
+        Me.testingTxt.Enabled = False
+        Me.testingTxt.Location = New System.Drawing.Point(796, 243)
+        Me.testingTxt.Name = "testingTxt"
+        Me.testingTxt.Size = New System.Drawing.Size(70, 22)
+        Me.testingTxt.TabIndex = 219
+        '
+        'btnNumUp
+        '
+        Me.btnNumUp.Font = New System.Drawing.Font("Century Gothic", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNumUp.Location = New System.Drawing.Point(872, 231)
+        Me.btnNumUp.Name = "btnNumUp"
+        Me.btnNumUp.Size = New System.Drawing.Size(22, 22)
+        Me.btnNumUp.TabIndex = 220
+        Me.btnNumUp.Text = "↑"
+        Me.btnNumUp.UseVisualStyleBackColor = True
+        '
+        'btnNumDown
+        '
+        Me.btnNumDown.Font = New System.Drawing.Font("Century Gothic", 7.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNumDown.Location = New System.Drawing.Point(872, 258)
+        Me.btnNumDown.Name = "btnNumDown"
+        Me.btnNumDown.Size = New System.Drawing.Size(22, 22)
+        Me.btnNumDown.TabIndex = 221
+        Me.btnNumDown.Text = "↓" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.btnNumDown.UseVisualStyleBackColor = True
         '
         'AddedFeature
         '
@@ -261,7 +282,9 @@ Partial Class AddedFeature
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(920, 423)
-        Me.Controls.Add(Me.numUpDown)
+        Me.Controls.Add(Me.btnNumDown)
+        Me.Controls.Add(Me.btnNumUp)
+        Me.Controls.Add(Me.testingTxt)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblStockList)
         Me.Controls.Add(Me.btnSave)
@@ -278,7 +301,6 @@ Partial Class AddedFeature
         CType(Me.OMSysStocksDBBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OMSysOrdersDBDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.OmSysOrdersDBDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.numUpDown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -301,5 +323,7 @@ Partial Class AddedFeature
     Friend WithEvents StockDataGridViewTextBoxColumn As DataGridViewTextBoxColumn
     Friend WithEvents OmSysOrdersDBDataSet1 As OMSysOrdersDBDataSet
     Friend WithEvents Label1 As Label
-    Friend WithEvents numUpDown As NumericUpDown
+    Friend WithEvents testingTxt As TextBox
+    Friend WithEvents btnNumUp As Button
+    Friend WithEvents btnNumDown As Button
 End Class
